@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
 
 const UserSchema = mongoose.Schema({
-    Username:String,
-    Avatar:String,
+    name: String,
     email: String,
-    password: String
+    password: String,
+    isAdmin: Boolean
 },{
     versionKey: false
 });
